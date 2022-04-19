@@ -137,7 +137,7 @@ categories: hadoop
 
 - Cấu hình core-site.xml như dưới đây:
 
-```
+```xml
 <configuration>
   <property>
     <name>fs.defaultFS</name>
@@ -148,7 +148,7 @@ categories: hadoop
 
 - Cấu hình mapred-site.xml như dưới đây:
 
-```
+```xml
 <configuration>
   <property>
     <name>mapreduce.framework.name</name>
@@ -165,7 +165,7 @@ categories: hadoop
 
 - Sau đó cấu hình hdfs-site.xml như sau:
 
-```
+```xml
 <configuration>
   <property>
     <name>dfs.replication</name>
@@ -184,7 +184,7 @@ categories: hadoop
 
 - Cấu hình yarn-site.xml như dưới đây:
 
-```
+```xml
 <configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
@@ -199,7 +199,9 @@ categories: hadoop
 
 - Tải [apache-hadoop-winutils](../../../../assets/files/winutils.zip)
 
-- Giải nén sẽ thấy thư mục **bin** bên trong. Chép đè thư mục bin này vào thư mục **C:\hadoop-3.3.0\bin** 
+- Giải nén sẽ thấy thư mục **bin** bên trong. Chép đè thư mục bin này vào thư mục **C:\hadoop-3.3.0\bin**
+
+![Cài đặt Hadoop](../../../../assets/images/hadoop-extract-winutils.png)
 
 - Sau đó format lại namenode và datanode, mở command line lên, gõ 2 lệnh sau (Bước format này chỉ cần làm 1 lần):
 
