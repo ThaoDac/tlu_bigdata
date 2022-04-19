@@ -77,13 +77,12 @@ categories: hadoop
 ![Cài đặt JDK 8](../../../../assets/images/env-jdk-new2.png)
 ![Cài đặt JDK 8](../../../../assets/images/env-jdk-new-popup2.png)
 
-- Chọn **Path** và bấm **Edit**
+- Chọn **Path** và bấm **Edit** của phần **User Variables**
 
 ![Cài đặt JDK 8](../../../../assets/images/env-jdk-path.png)
 
 - Bấm **New** và nhập **%JAVA_HOME%\bin**
 
-![Cài đặt JDK 8](../../../../assets/images/env-jdk-path.png)
 ![Cài đặt JDK 8](../../../../assets/images/env-jdk-new-path-java.png)
 
 - Làm tương tự với **System Variables**.
@@ -120,6 +119,12 @@ categories: hadoop
 
 - Thêm 2 giá trị **%HADOOP_HOME%\bin** và **%HADOOP_HOME%\sbin** vào biến **Path** của phần **User Variables**
 
+![Cài đặt JDK 8](../../../../assets/images/env-jdk-path.png)
+![Cài đặt JDK 8](../../../../assets/images/hadoop-path.png)
+
+- Tương tự thêm vào biến **Path** của phần **System Variables**
+
+![Cài đặt JDK 8](../../../../assets/images/env-jdk-path2.png)
 ![Cài đặt JDK 8](../../../../assets/images/hadoop-path.png)
 
 - Vào **cmd** gõ **hadoop version**, nếu kết quả trả về như ảnh thì quá trình thiết lập môi trường thành công.
@@ -192,9 +197,7 @@ categories: hadoop
 </configuration>
 ```
 
-- Tải [https://github.com/s911415/apache-hadoop-3.1.0-winutils](https://github.com/s911415/apache-hadoop-3.1.0-winutils)
-
-![Cài đặt JDK 8](../../../../assets/images/hadoop-download-utils.png)
+- Tải [apache-hadoop-winutils](../../../../assets/files/winutils.zip)
 
 - Giải nén sẽ thấy thư mục **bin** bên trong. Chép đè thư mục bin này vào thư mục **C:\hadoop-3.3.0\bin** 
 
@@ -222,8 +225,11 @@ start-all
 
 >NOTE: Trường hợp bị lỗi hãy chạy lên trên cmd bằng quyền Administrator
 
-- Vào trang quản lý ứng dụng Hadoop: **http://localhost:8088/cluster**
+- Yarn web page: **http://localhost:8088/**
 ![Cài đặt JDK 8](../../../../assets/images/hadoop-8088.png)
 
-- Vào trang thông tin NameNode: **http://localhost:9870/dfshealth.html#tab-overview**
+- Name node web page: **http://localhost:9870/**
 ![Cài đặt JDK 8](../../../../assets/images/hadoop-9879.png)
+
+- Data node web page: **http://localhost:9864/**
+![Cài đặt JDK 8](../../../../assets/images/hadoop-9884.png)
