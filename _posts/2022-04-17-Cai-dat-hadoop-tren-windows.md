@@ -92,6 +92,7 @@ categories: hadoop
 
 - Vào **cmd** gõ **java -version**, nếu kết quả trả về như ảnh thì quá trình thiết lập môi trường thành công.
 
+![Cài đặt JDK 8](../../../../assets/images/cmd.png)
 ![Cài đặt JDK 8](../../../../assets/images/env-jdk-check.png)
 
 ## Cài đặt Hadoop
@@ -202,6 +203,8 @@ categories: hadoop
 - Giải nén sẽ thấy thư mục **bin** bên trong. Chép đè thư mục bin này vào thư mục **C:\hadoop-3.3.0\bin**
 
 ![Cài đặt Hadoop](../../../../assets/images/hadoop-extract-winutils.png)
+![Cài đặt Hadoop](../../../../assets/images/hadoop-extract-winutils2.png)
+![Cài đặt Hadoop](../../../../assets/images/hadoop-extract-winutils3.png)
 
 - Sau đó format lại namenode và datanode, mở command line lên, gõ 2 lệnh sau (Bước format này chỉ cần làm 1 lần):
 
