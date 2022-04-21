@@ -30,7 +30,7 @@ categories: hadoop
 
 - Bấm **Change** để thay đổi đường dẫn lưu.
 
-![Cài đặt JDK 8](../../../../assets/images/next-jdk2.png)
+![Cài đặt JDK 8](../../../../assets/images/change-path-jd2.png)
 
 - Chọn thư mục để lưu JDK. ***Lưu ý: đường dẫn không có dấu và không có khoảng trắng.***
 
