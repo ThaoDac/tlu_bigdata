@@ -7,7 +7,7 @@ categories: hadoop
 # Lập trình MapReduce cho bài toán phân loại hoa Iris sử dụng thuật toán Naive Bayes
 
 ### Bước 1: Tải file dữ liệu loài hoa Iris
-Tải file data tại https://www.kaggle.com/datasets/uciml/iris hoặc tạo file **iris.csv** với nội dung như sau:
+Tải file data tại [Kaggle](https://www.kaggle.com/datasets/uciml/iris) hoặc tạo file **iris.csv** với nội dung như sau:
 
 ```
 5.1,3.5,1.4,0.2,Iris-setosa
