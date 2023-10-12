@@ -649,6 +649,6 @@ hadoop jar C:\jar\KMeans.jar -Din /k-input/data-kmeans.txt  -Dlines 30 -Dresult 
 Sử dụng lệnh sau để kiểm tra kết quả
 
 ```
-hdfs dfs -cat /k-out/result.txt
+hdfs dfs -cat /k-output/result.txt
 ```
 ![Kmeans](../../../../assets/images/kmeans-13.png)
