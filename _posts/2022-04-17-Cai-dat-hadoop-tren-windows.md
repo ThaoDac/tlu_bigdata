@@ -218,7 +218,7 @@ hdfs datanode -format
 
 - Tiếp theo sao chép file: **C:\hadoop-3.3.0\share\hadoop\yarn\timelineservice\ hadoop-yarn-servertimelineservice-3.3.0.jar** vào **C:\hadoop-3.3.0\share\hadoop\yarn\hadoop-yarn-server-timelineservice-3.3.0.jar**
 
-- Quá trình cài đặt Hadoop đã hoàn tất, để chạy Hadoop di chuyển tới thư mục **C:\hadoop-3.3.0\sbin**. Gõ lệnh:
+- Quá trình cài đặt Hadoop đã hoàn tất, bật Command Prompt ở chế độ Administrator (chuột phải chọn *Run as administrator*). Gõ lệnh:
 
 ```
 start-all

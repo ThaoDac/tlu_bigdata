@@ -7,7 +7,7 @@ categories: hadoop
 # Lập trình MapReduce cho bài toán phân loại hoa Iris sử dụng thuật toán Naive Bayes
 
 ### Bước 1: Tải file dữ liệu loài hoa Iris
-Tải file data tại [Kaggle](https://www.kaggle.com/datasets/uciml/iris) hoặc tạo file **iris.csv** với nội dung như sau:
+Dữ liệu được lấy tại [Kaggle](https://www.kaggle.com/datasets/uciml/iris), tạo file **iris.csv** với nội dung như sau:
 
 ```
 5.1,3.5,1.4,0.2,Iris-setosa
@@ -348,8 +348,9 @@ public class NaiveBayesTrainJob extends Configured implements Tool{
 
 	@Override
 	public int run(String[] arg0) throws Exception {
+    Configuration c = getConf();
 		// TODO Auto-generated method stub
-		JobConf conf = new JobConf(getConf(),NaiveBayesTrainJob.class);
+		JobConf conf = new JobConf(c, NaiveBayesTrainJob.class);
 		conf.setJobName("Training");
 		conf.setMapOutputKeyClass(Text.class);
 		conf.setMapOutputValueClass(DoubleWritable.class);
@@ -532,7 +533,8 @@ public class NaiveBayesTestJob extends Configured implements Tool{
 
 	@Override
 	public int run(String[] arg0) throws Exception {
-		JobConf conf = new JobConf(getConf(),NaiveBayesTestJob.class);
+    Configuration c = getConf();
+		JobConf conf = new JobConf(c ,NaiveBayesTestJob.class);
 		Job job = new Job(conf, "Multi-view NaiveBayes Training");
 		
 		DistributedCache.addCacheFile(new Path(conf.get("modelPath")+"/part-00000").toUri(), conf);
