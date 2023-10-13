@@ -348,7 +348,7 @@ public class NaiveBayesTrainJob extends Configured implements Tool{
 
 	@Override
 	public int run(String[] arg0) throws Exception {
-    Configuration c = getConf();
+        Configuration c = getConf();
 		// TODO Auto-generated method stub
 		JobConf conf = new JobConf(c, NaiveBayesTrainJob.class);
 		conf.setJobName("Training");
@@ -533,7 +533,7 @@ public class NaiveBayesTestJob extends Configured implements Tool{
 
 	@Override
 	public int run(String[] arg0) throws Exception {
-    Configuration c = getConf();
+        Configuration c = getConf();
 		JobConf conf = new JobConf(c ,NaiveBayesTestJob.class);
 		Job job = new Job(conf, "Multi-view NaiveBayes Training");
 		
